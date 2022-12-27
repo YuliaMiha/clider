@@ -1,0 +1,100 @@
+.section-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2083;
+  text-align: center;
+  color: #000000;
+  background-color: aquamarine;
+}
+
+.section-slider {
+  padding: 40px 0;
+
+  &__swiper {
+    padding: 40px 0 46px;
+    background-color: aqua;
+  }
+
+  &__item {
+    list-style: none;
+    text-align: center;
+    color: #000000;
+
+    font-family: "Inter";
+    font-style: normal;
+
+    // &.swiper-slide-active {
+    //   .team__desc p {
+    //     transform: translateY(0);
+    //     opacity: 1;
+    //   }
+    // }
+    // &.is-play {
+    //   .team__desc p {
+    //     transform: translateY(0);
+    //     opacity: 1;
+    //   }
+    // }
+  }
+
+  &__image {
+    width: 181px;
+    height: 181px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+
+    margin: 0 auto 20px;
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2222;
+
+    margin-bottom: 12px;
+  }
+
+  &__position {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.7142;
+
+    //  margin: 12px 0 40px;
+  }
+
+  &__description {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 886px;
+
+    margin: 0 auto;
+
+    // p {
+    //   transition: ease-in-out 0.4s;
+    //   opacity: 0;
+    //   transform: translateY(100%);
+    // }
+  }
+
+  &__pagination {
+    &.swiper-pagination {
+      bottom: 0;
+    }
+
+    .swiper-pagination-bullet {
+      background: #939eac;
+      width: 6px;
+      height: 6px;
+      display: inline-flex;
+      gap: 8px;
+
+      &.swiper-pagination-bullet-active {
+        background: #06071b;
+      }
+    }
+  }
+}
